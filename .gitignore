@@ -1,19 +1,37 @@
-*.log
+# Exclude these files from the git repo
+wp-admin/*
+wp-includes/*
+wp-content/backup/*
+wp-content/cache/*
+wp-content/upgrade/*
+wp-content/uploads/*
+_email-images/*
+
+config.codekit3
+sitemap.*
+index.php
+license.txt
+readme.html
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-config-sample.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
 wp-config.php
-wp-content/advanced-cache.php
-wp-content/backup-db/
-wp-content/backups/
-wp-content/blogs.dir/
-wp-content/cache/
-wp-content/upgrade/
-wp-content/uploads/
-wp-content/mu-plugins/
-wp-content/wp-cache-config.php
-wp-content/plugins/hello.php
 
-/.htaccess
-/license.txt
-/readme.html
-/sitemap.xml
-/sitemap.xml.gz
+# Hidden system files
+*.DS_Store
+*[Tt]humbs.db
+*.Trashes
 
+# Include these files in previously blocked directories
+!wp-content/uploads/.htaccess
+!wp-content/themes/*/index.php
