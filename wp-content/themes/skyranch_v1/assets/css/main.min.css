@@ -519,6 +519,9 @@ section.heroimage {
 .homepage-heroimages .homepage-heroimage {
   display: none; }
 
+.homepage-slider .carousel-indicators {
+  bottom: 20px; }
+
 .homepage-contactform {
   padding-top: 5vh; }
   .homepage-contactform .form-container {
@@ -556,17 +559,18 @@ section.heroimage {
 
 .community-slider {
   margin-bottom: 3vh; }
-  .community-slider .carousel-indicators {
-    margin: 0 5%;
-    -webkit-box-pack: left;
-    -webkit-justify-content: left;
-            justify-content: left;
-    bottom: 0; }
-    .community-slider .carousel-indicators li {
-      background-color: #fff;
-      opacity: 1; }
-      .community-slider .carousel-indicators li.active {
-        background-color: #fedb56; }
+
+.carousel-indicators {
+  margin: 0 5%;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+          justify-content: left;
+  bottom: 0; }
+  .carousel-indicators li {
+    background-color: #fff;
+    opacity: 1; }
+    .carousel-indicators li.active {
+      background-color: #fedb56; }
 
 .builder-content .builder-contentarea {
   text-align: center; }
@@ -718,10 +722,10 @@ No media query...Bootstrap default
         bottom: 25%; }
       .homepage-heroimages .homepage-heroimage .homepage-heroimage-contents.image-2 {
         bottom: 35%; }
-  .community-slider .carousel-indicators li {
+  .carousel-indicators li {
     width: 45px;
     height: 6px; }
-    .community-slider .carousel-indicators li.active {
+    .carousel-indicators li.active {
       background-color: #fedb56; }
   .page-breadcrumbs {
     margin-top: 175px; } }
