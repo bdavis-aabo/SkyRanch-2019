@@ -1,0 +1,103 @@
+@import 'bourbon/bourbon';
+@import 'mixins';
+
+/*
+  - images
+  - fonts
+  - colors
+  - buttons
+  - base styles
+*/
+
+// IMAGES
+img { display: inherit; }
+.alignleft, img.alignleft     { float: left; margin: 0 1rem 1rem 0;  }
+.alignright, img.alignright   { float: right; margin: 0 0 1rem 1rem; }
+.aligncenter, img.aligncenter { float: none; margin: 0 auto 1rem; }
+.alignnone, img.alignnone     { float: none; margin: 0 auto; }
+
+// FONTS
+@include font-face('avenir','../fonts/avenir/AvenirLTStd-Roman');
+@include font-face('brandon','../fonts/brandon-grostesque/brandon-grostesque');
+@include font-face('quickpen','../fonts/trial/trial-webfont');
+
+$base-font-size:  15px;
+$line-height:     26px;
+$heading-scale:   4;
+
+.script-txt { font-family: 'quickpen', sans-serif; text-transform: lowercase; }
+
+// COLORS
+$white:      #fff;
+$ltgray:     #ccc;
+$gray:       #555759;
+$black:      #000;
+$aqua:       #83BAF1;
+$ltblue:     #40A6D2;
+$peach:      #F58B70;
+$green:      #119B93;
+$yellow:     #fedb56;
+
+.peach-txt { color: $peach; }
+
+.ltblue-bg { background: $ltblue; color: $white; }
+
+// BUTTONS
+.btn { text-transform: uppercase; font-size: 1em; transition: all 666ms ease-in-out;
+  &.outline-btn { border: 1px solid $gray; color: $gray; padding: 6px 25px 3px;
+    &:hover { color: $ltgray; border-color: $ltgray; }
+
+  }
+}
+
+// Base Styles
+body {
+  font-family:  'avenir', sans-serif;
+  font-size:    $base-font-size;
+  line-height:  $line-height;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smooting: grayscale;
+  color: $gray;
+  @include headings($base-font-size, $heading-scale - 1);
+  h1 { color: $ltblue;
+    em { font-family: 'quickpen', }
+  }
+  a { transition: all 666ms ease-in-out;
+    &:hover { text-decoration: none; }
+  }
+  p { margin: 0 0 10px; }
+}
+
+
+/*
+Extra small devices (portrait phones, less than 576px)
+No media query...Bootstrap default
+*/
+
+/*** SMALL DEVICES : Landscape phones, 576px + ***/
+@media (min-width: 576px){
+  body {
+    @include headings($base-font-size, $heading-scale * 1.25);
+
+  }
+}
+
+/*** MEDIUM DEVICES : Tablets, 768px + ***/
+@media (min-width: 768px){
+
+}
+
+/*** LARGE DEVICES : Desktops, 992px and up ***
+@media (min-width: 992px){
+
+}
+
+/*** EXTRA LARGE DEVICES : Large Desktops, 1200px + ***/
+@media (min-width: 1200px){
+
+}
+
+
+/*
+:::::::::: CUSTOM MEDIA QUERIES IF NEEDED ::::::::::
+*/

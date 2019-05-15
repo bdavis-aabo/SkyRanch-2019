@@ -1,0 +1,105 @@
+// NAV ICON
+$button-width:    26px;
+$button-height:   24px;
+$bar-thickness:   2px;
+
+.navbar-toggle { background: transparent; position: absolute; left: 10px; top: 12px; border: none; border-radius: 0; cursor: pointer; width: $button-width; height: $button-height; padding: 0; z-index: 103;
+  &:focus { outline: 0; }
+  .nav-iconbar { position: absolute; display: block; height: $bar-thickness; width: 100%; background: $ltblue; opacity: 1; left: 0; top: 0;
+    transform: rotate(0deg); transition: 0.25s ease-in-out;
+    &:nth-child(1) { top: 0; }
+    &:nth-child(2),
+    &:nth-child(3) { top: 9px; }
+    &:nth-child(4) { top: 18px; }
+  }
+  &.open {
+    .nav-iconbar {
+      &:nth-child(1) { top: 12px; opacity: 0; }
+      &:nth-child(2) { transform: rotate(-45deg); transition-delay: .3s; }
+      &:nth-child(3) { transform: rotate(45deg); transition-delay: .3s; }
+      &:nth-child(4) { top: 12px; opacity: 0; }
+    }
+  }
+}
+
+.navbar { position: absolute; top: 0; left: 0; z-index: 101; width: 100vw; height: 0; padding: 0;
+  &.open { height: auto; }
+  .navbar-default { position: relative; top: 0; left: 0; height: 100vh; width: 100vw; transform: translateY(-100%); padding: 45px 12px 0; background: rgba(255,255,255,.98);
+    transition: transform 666ms ease-in-out;
+    &.open { transform: translateY(0);}
+    .navbar-nav { text-transform: uppercase; font-size: 16px; text-align: center;
+      .nav-item {
+        a { color: $gray; padding: 1rem .25rem;
+          &:hover { color: $ltblue; }
+        }
+        .dropdown-menu { border: none; margin: 0; font-size: 1em; background: transparent;  text-align: center;
+          .nav-item {
+            .dropdown-item { padding: .5rem 1rem; }
+          }
+        }
+        &.active {
+          a { color: $ltblue; }
+          .dropdown-menu {
+            .nav-item {
+              .dropdown-item { color: $gray; }
+              &.active {
+                .dropdown-item { color: $ltblue;  }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/*** SMALL DEVICES : Landscape phones, 576px + ***/
+@media (min-width: 576px){
+
+}
+
+/*** MEDIUM DEVICES : Tablets, 768px + ***/
+@media (min-width: 768px){
+
+}
+
+/*** LARGE DEVICES : Desktops, 992px and up ***
+@media (min-width: 992px){
+
+}
+
+/*** EXTRA LARGE DEVICES : Large Desktops, 1200px + ***/
+@media (min-width: 1200px){
+  $button-width:  32px;
+  $button-height: 30px;
+  $bar-thickness:  4px;
+  .navbar-toggle { top: 25px; left: 25px; width: $button-width; height: $button-height;
+    .nav-iconbar { height: $bar-thickness;
+      &:nth-child(2),
+      &:nth-child(3) { top: 12px; }
+      &:nth-child(4) { top: 24px; }
+    }
+  }
+  .navbar {
+    .navbar-default {
+      .navbar-nav { margin-top: 30px; margin-left: 0;  font-size: 2em;
+        .nav-item {
+          a { padding: 2rem 0; }
+          .dropdown-menu {
+            .nav-item {
+              .dropdown-item { padding: 2rem 0; }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/*
+:::::::::: CUSTOM MEDIA QUERIES IF NEEDED ::::::::::
+*/

@@ -1,0 +1,92 @@
+// CONTACT FORM
+.homepage-contactform {
+  .form-container {
+    .contact-form { float: left; width: 100%; padding-bottom: 5vh;
+      .form-group { float: left; width: 100%; margin-bottom: 0;
+        .form-control { margin-bottom: 20px; background: $ltgray; color: $white; text-transform: uppercase; padding: 8px 10px 6px;
+          &::-webkit-input-placeholder { color: $white; }
+          &::-moz-placeholder { color: $white; }
+          &:-ms-input-placeholder { color: $white; }
+          &:-moz-placeholder { color: $white; }
+        }
+
+      }
+    }
+  }
+}
+
+.contact-form-container {
+  .form-group { clear: both; float: left; width: 100%; margin-bottom: 0;
+    .form-control { margin-bottom: 20px; background: $ltgray; color: $white; text-transform: uppercase; padding: 8px 10px 6px; box-shadow: none;
+      &::-webkit-input-placeholder { color: $white; }
+      &::-moz-placeholder { color: $white; }
+      &:-ms-input-placeholder { color: $white; }
+      &:-moz-placeholder { color: $white; }
+    }
+    .checkbox-builder { display: inline-block; margin-right: 15px; }
+    &.boxes { margin-bottom: 25px; }
+  }
+}
+
+input[type=radio]:not(old),
+input[type=checkbox]:not(old)		{ width: 2em; margin: 0; padding: 0; font-size: 1em; opacity: 0; border-radius: 2em; }
+input[type=checkbox]:not(old) + label,
+input[type=radio]:not(old) + label 	{ display: inline-block; margin-left: -2em; line-height: 1.5em; }
+input[type=radio]:not(old) + label > span { display: inline-block; width: 1.1em; height: 1.1em; margin: .25em .5em .25em .25em; border: .0625em solid $ltgray;
+	background: linear-gradient(rgb(240,240,240), rgb(224,224,224)); vertical-align: bottom; border-radius: 2em; }
+input[type=checkbox]:not(old) + label > span { display: inline-block; width: 1.1em; height: 1.1em; margin: .25em .5em .25em .25em; border: .0625em solid $ltgray;
+	background: linear-gradient(rgb(240,240,240), rgb(224,224,224)); vertical-align: bottom; border-radius: .125em; }
+input[type=checkbox]:not(old):checked + label > span,
+input[type=radio   ]:not(old):checked + label > span { background: linear-gradient(rgb(224,224,224),rgb(240,240,240)); }
+input[type=checkbox]:not(old):checked + label > span:before { content: ''; display: block; width: 1em; color: $aqua; font-size: .875em; line-height: 1em; text-align: center; text-shadow: 0 0 0.714em rgba(0155,153,77,1); }
+input[type=radio]:not(old):checked + label > span > span { display: block; width: 1em; height: 1em; margin: 0; border: .0625em solid $aqua; border-radius: 2em;
+	background: $aqua; }
+input[type=checkbox]:not(old):checked + label > span > span { display: block; width: 1em; height: 1em; margin: 0; border: .0625em solid $aqua; border-radius: .125em;
+	background: $aqua; }
+.hidden { display: none; }
+
+/*
+Extra small devices (portrait phones, less than 576px)
+No media query...Bootstrap default
+*/
+
+/*** SMALL DEVICES : Landscape phones, 576px + ***/
+@media (min-width: 576px){
+  .homepage-contactform {
+    .form-container {
+      .contact-form {
+        .form-group { float: left; width: 100%;
+          .one-half { float: left; width: 48%;
+            &.last  { float: right; }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*** MEDIUM DEVICES : Tablets, 768px + ***/
+@media (min-width: 768px){
+  .contact-form-container {
+    .form-group { clear: both; float: left; width: 100%; margin-bottom: 0;
+      .one-half { width: 48%; float: left;
+        &.last  { float: right; }
+      }
+    }
+  }
+}
+
+/*** LARGE DEVICES : Desktops, 992px and up ***
+@media (min-width: 992px){
+
+}
+
+/*** EXTRA LARGE DEVICES : Large Desktops, 1200px + ***/
+@media (min-width: 1200px){
+
+}
+
+
+/*
+:::::::::: CUSTOM MEDIA QUERIES IF NEEDED ::::::::::
+*/
