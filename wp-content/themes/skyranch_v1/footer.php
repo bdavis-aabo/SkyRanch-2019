@@ -30,7 +30,7 @@
       <div class="row">
         <div class="col-12">
           <div class="copyright">
-            <?php echo '&copy;'.date('Y').' '; bloginfo('name'); ?> All pricing, product specifications, amenities and landscaping is subject to change without prior notice.
+            <?php echo '&copy;'.date('Y').' Pure Cycle'; ?> All pricing, product specifications, amenities and landscaping is subject to change without prior notice.
             <img src="<?php bloginfo('template_directory') ?>/assets/images/eho-icon.png" class="eho-icon alignleft" />
 
           </div>
