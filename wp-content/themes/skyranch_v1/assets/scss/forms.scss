@@ -52,7 +52,7 @@ No media query...Bootstrap default
 
 /*** SMALL DEVICES : Landscape phones, 576px + ***/
 @media (min-width: 576px){
-  .homepage-contactform {
+  .homepage-contactform { margin-bottom: 3vh; 
     .form-container {
       .contact-form {
         .form-group { float: left; width: 100%;
@@ -67,7 +67,7 @@ No media query...Bootstrap default
 
 /*** MEDIUM DEVICES : Tablets, 768px + ***/
 @media (min-width: 768px){
-  .contact-form-container {
+  .contact-form-container { text-align: center;
     .form-group { clear: both; float: left; width: 100%; margin-bottom: 0;
       .one-half { width: 48%; float: left;
         &.last  { float: right; }

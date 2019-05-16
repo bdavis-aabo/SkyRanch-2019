@@ -40,10 +40,13 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
+  <?php require_once('assets/_inc/ga-include.php') ?>
+
   <?php wp_head() ?>
 </head>
 <body <?php body_class(); ?>>
 
+  <?php require_once('assets/_inc/ga-body.php') ?>
   <header class="header">
 
     <div class="hero-mask">

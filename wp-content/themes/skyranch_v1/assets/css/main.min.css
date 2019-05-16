@@ -296,27 +296,31 @@ No media query...Bootstrap default
 */
 /*** SMALL DEVICES : Landscape phones, 576px + ***/
 @media (min-width: 576px) {
-  .homepage-contactform .form-container .contact-form .form-group {
-    float: left;
-    width: 100%; }
-    .homepage-contactform .form-container .contact-form .form-group .one-half {
+  .homepage-contactform {
+    margin-bottom: 3vh; }
+    .homepage-contactform .form-container .contact-form .form-group {
       float: left;
-      width: 48%; }
-      .homepage-contactform .form-container .contact-form .form-group .one-half.last {
-        float: right; } }
+      width: 100%; }
+      .homepage-contactform .form-container .contact-form .form-group .one-half {
+        float: left;
+        width: 48%; }
+        .homepage-contactform .form-container .contact-form .form-group .one-half.last {
+          float: right; } }
 
 /*** MEDIUM DEVICES : Tablets, 768px + ***/
 @media (min-width: 768px) {
-  .contact-form-container .form-group {
-    clear: both;
-    float: left;
-    width: 100%;
-    margin-bottom: 0; }
-    .contact-form-container .form-group .one-half {
-      width: 48%;
-      float: left; }
-      .contact-form-container .form-group .one-half.last {
-        float: right; } }
+  .contact-form-container {
+    text-align: center; }
+    .contact-form-container .form-group {
+      clear: both;
+      float: left;
+      width: 100%;
+      margin-bottom: 0; }
+      .contact-form-container .form-group .one-half {
+        width: 48%;
+        float: left; }
+        .contact-form-container .form-group .one-half.last {
+          float: right; } }
 
 /*** LARGE DEVICES : Desktops, 992px and up ***
 @media (min-width: 992px){

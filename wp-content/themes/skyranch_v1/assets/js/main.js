@@ -19,5 +19,8 @@ $(document).ready(function(){
 		jQuery('#builder').val(builder.join(', '));
 	});
 
+  $('#homepage-carousel').carousel({
+    interval: 4000,
+  });
 
 });
