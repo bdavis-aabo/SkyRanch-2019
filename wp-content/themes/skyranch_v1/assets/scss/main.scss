@@ -91,9 +91,14 @@ section.heroimage { position: relative; top: 55px;  }
 // NEWS PAGE & ARTICLES
 .blog-articles  { margin: 3vh 0;
   .news-article { text-align: center;
+    .img-fluid { margin-bottom: 20px; }
     .article-title,
     .article-title a { color: $ltblue; margin: 0 0 5px; }
     .post-date { font-size: 1.1em; text-transform: uppercase; }
+    p { margin: 15px 0; }
+    .more-link { border: 1px solid $gray; color: $gray; padding: 6px 25px 3px; border-radius: .25rem; text-transform: uppercase;
+      &:hover { color: $ltgray; border-color: $ltgray; }
+    }
   }
 }
 

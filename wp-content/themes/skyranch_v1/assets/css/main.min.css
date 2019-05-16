@@ -598,6 +598,8 @@ section.heroimage {
   margin: 3vh 0; }
   .blog-articles .news-article {
     text-align: center; }
+    .blog-articles .news-article .img-fluid {
+      margin-bottom: 20px; }
     .blog-articles .news-article .article-title,
     .blog-articles .news-article .article-title a {
       color: #40A6D2;
@@ -605,6 +607,17 @@ section.heroimage {
     .blog-articles .news-article .post-date {
       font-size: 1.1em;
       text-transform: uppercase; }
+    .blog-articles .news-article p {
+      margin: 15px 0; }
+    .blog-articles .news-article .more-link {
+      border: 1px solid #555759;
+      color: #555759;
+      padding: 6px 25px 3px;
+      border-radius: .25rem;
+      text-transform: uppercase; }
+      .blog-articles .news-article .more-link:hover {
+        color: #ccc;
+        border-color: #ccc; }
 
 .footer-address {
   text-align: center;

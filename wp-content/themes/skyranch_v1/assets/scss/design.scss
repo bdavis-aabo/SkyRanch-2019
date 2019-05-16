@@ -46,7 +46,6 @@ $yellow:     #fedb56;
 .btn { text-transform: uppercase; font-size: 1em; transition: all 666ms ease-in-out;
   &.outline-btn { border: 1px solid $gray; color: $gray; padding: 6px 25px 3px;
     &:hover { color: $ltgray; border-color: $ltgray; }
-
   }
 }
 

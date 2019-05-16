@@ -17,7 +17,7 @@
             <?php echo get_the_post_thumbnail($post->ID, 'full', array('class' => 'img-fluid')); ?>
             <h2 class="article-title"><a href="<?php the_permalink() ?>" title="<?php the_title() ?>"><?php the_title() ?></a></h2>
             <p class="post-date"><?php echo get_the_date() ?></p>
-            <?php the_content() ?>
+            <?php the_content('read more') ?>
           </article>
         </div>
       </div>
