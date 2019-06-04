@@ -22,5 +22,4 @@ $(document).ready(function(){
   $('#homepage-carousel').carousel({
     interval: 4000,
   });
-
 });

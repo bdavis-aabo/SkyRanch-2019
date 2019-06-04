@@ -38,6 +38,12 @@
       </div>
     </div>
   </footer>
+  
+  <script type="text/javascript">
+  	document.addEventListener( 'wpcf7mailsent', function( event ) {
+    	location = 'http://skyranchco.com/thank-you';
+	}, false );
+  </script>
 
 <?php wp_footer() ?>
 </body>
