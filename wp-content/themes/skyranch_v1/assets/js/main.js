@@ -25,5 +25,5 @@ $(document).ready(function(){
 });
 
 document.addEventListener('wpcf7mailsent',function(event){
-  location = 'http://skyranchcho.com/thank-you';
+  location = 'http://skyranchco.com/thank-you/';
 }, false);
