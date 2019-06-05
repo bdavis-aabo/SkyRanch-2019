@@ -6,20 +6,24 @@ $(document).ready(function(){
     $('.navbar').toggleClass('open');
   });
 
-  jQuery('input[name="builder[]"]').change(function(){
+  $('input[name="builder[]"]').change(function(){
 		var emailTo = [];
 		var builder = [];
 
-		jQuery.each(jQuery('input[name="builder[]"]:checked'), function(){
-			emailTo.push(jQuery(this).attr('data-mailto'));
-			builder.push(jQuery(this).val());
+		$.each($('input[name="builder[]"]:checked'), function(){
+			emailTo.push($(this).attr('data-mailto'));
+			builder.push($(this).val());
 		});
 
-		jQuery('#mailto').val(emailTo.join(', '));
-		jQuery('#builder').val(builder.join(', '));
+		$('#mailto').val(emailTo.join(', '));
+		$('#builder').val(builder.join(', '));
 	});
 
   $('#homepage-carousel').carousel({
     interval: 4000,
   });
 });
+
+document.addEventListener('wpcf7mailsent',function(event){
+  location = 'http://skyranchcho.com/thank-you';
+}, false);
