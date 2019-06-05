@@ -290,6 +290,12 @@ input[type=checkbox]:not(old):checked + label > span > span {
 .hidden {
   display: none; }
 
+.wpcf7-response-output {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 15px; }
+
 /*
 Extra small devices (portrait phones, less than 576px)
 No media query...Bootstrap default
