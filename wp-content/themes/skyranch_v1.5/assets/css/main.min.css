@@ -519,7 +519,8 @@ header {
 .contact-form-container {
   margin-bottom: 25px;
   clear: both;
-  float: left; }
+  float: left;
+  width: 100%; }
 
 .footer {
   width: 100%; }
