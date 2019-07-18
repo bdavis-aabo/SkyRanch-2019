@@ -9,6 +9,8 @@ _email-images/*
 
 wp-content/themes/skyranch_v1/assets/_inc/ga-include.php
 wp-content/themes/skyranch_v1/assets/_inc/ga-body.php
+wp-content/themes/skyranch_v1.5/assets/_inc/ga-include.php
+wp-content/themes/skyranch_v1.5/assets/_inc/ga-body.php
 
 
 config.codekit3

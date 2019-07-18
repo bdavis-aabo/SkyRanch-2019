@@ -1,0 +1,28 @@
+@mixin headings($x,$y) {
+  @for $i from 1 through 6 {
+    h#{$i} {
+      font-size: $x + $y * (6 - $i);
+      margin-top: 0;
+      margin-bottom: ($x + $y * (6 - $i)) / 2;
+      font-family: 'avenir', sans-serif;
+      line-height: ($x + $y * (6 - $i)) * 1.1;
+    }
+  }
+}
+
+@mixin sliding-btn($color){
+  background-image: -webkit-linear-gradient(right, tint($color, 25), tint($color, 25) 50%, $color 50%, $color);
+  background-image:      -o-linear-gradient(right, tint($color, 25), tint($color, 25) 50%, $color 50%, $color);
+  background-image:       linear-gradient(to left, tint($color, 25), tint($color, 25) 50%, $color 50%, $color);
+  background-position:  0 0;
+  background-size:      200% 100%;
+  transition:           all 333ms ease-in-out;
+}
+
+@function tint($color, $percentage){
+  @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage){
+  @return mix(black, $color, $percentage);
+}

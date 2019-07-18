@@ -1,0 +1,71 @@
+@import 'design';
+@import 'forms';
+@import 'navigation';
+
+body { background: $ltgray; overflow-x: hidden; }
+.main-wrapper { background: $white; box-shadow: 0 0 8px rgba(0,0,0,.2); overflow-x: hidden; }
+section { width: 100%; }
+// HEADER
+header { width: 100%; position: relative; z-index: 99;
+  .hero-mask { background: transparent url('../images/hero-mask-flat.png') no-repeat 0 0; background-size: contain; height: 100%; position: absolute; left: 0; right: 0; top: 15px; bottom: 0; z-index: 100;
+    .hero-logo { position: absolute; top: 25px; right: 15px; display: block; width: 180px; }
+  }
+  .homepage-slider { position: absolute; left: 0; top: 55px; z-index: 98; }
+}
+
+// MAIN CONTENT
+.homepage-content { margin-top: 140px; }
+.builder-link { text-align: center; margin-top: 15px; margin-bottom: 25px; }
+.contact-form-container { margin-bottom: 25px; clear: both; float: left; }
+
+// FOOTER
+.footer { width: 100%; }
+
+
+
+/*** SMALL DEVICES : Landscape phones, 576px + ***/
+@media (min-width: 576px){
+  header {
+    .hero-mask {
+      .hero-logo { position: absolute; top: 45px; right: 15px; display: block; width: 250px; }
+    }
+  }
+
+  .page-breadcrumbs { margin-top: 100px; }
+}
+
+/*** MEDIUM DEVICES : Tablets, 768px + ***/
+@media (min-width: 768px){
+  header {
+    .hero-mask {
+      .hero-logo { top: 60px; right: 25px; width: 300px; }
+    }
+    .homepage-slider { top: 100px; }
+  }
+  .homepage-content { margin-top: 260px; }
+}
+
+/*** LARGE DEVICES : Desktops, 992px and up ***/
+@media (min-width: 992px){
+  header {
+    .homepage-slider { top: 140px; }
+  }
+  .homepage-content { margin-top: 330px; }
+}
+
+/*** EXTRA LARGE DEVICES : Large Desktops, 1200px + ***/
+@media (min-width: 1200px){
+  header {
+    .homepage-slider { top: 170px; }
+    .hero-mask {
+      .hero-logo { top: 80px; right: 30; width: 400px; }
+    }
+  }
+  .homepage-content { margin-top: 185px; padding: 3vh 0; }
+  .page-breadcrumbs { margin-top: 150px; }
+}
+
+
+/*
+:::::::::: CUSTOM MEDIA QUERIES IF NEEDED ::::::::::
+*/
