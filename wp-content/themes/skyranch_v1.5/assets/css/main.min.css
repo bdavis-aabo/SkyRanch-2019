@@ -485,31 +485,31 @@ section {
 header {
   width: 100%;
   position: relative;
-  z-index: 99; }
-  header .hero-mask {
+  z-index: 99;
+  left: 0;
+  top: 0; }
+  header .header-mask {
     background: transparent url("../images/hero-mask-flat.png") no-repeat 0 0;
     background-size: contain;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 15px;
-    bottom: 0;
-    z-index: 100; }
-    header .hero-mask .hero-logo {
+    min-height: 69px;
+    top: 10px;
+    float: left;
+    width: 100%;
+    position: relative; }
+    header .header-mask .hero-logo {
       position: absolute;
       top: 25px;
       right: 15px;
       display: block;
       width: 180px; }
   header .homepage-slider {
-    position: absolute;
+    position: inherit;
     left: 0;
-    top: 55px;
+    top: 0;
     z-index: 98; }
 
 .homepage-content {
-  margin-top: 140px; }
+  margin-top: 0; }
 
 .builder-link {
   text-align: center;
@@ -527,7 +527,7 @@ header {
 
 /*** SMALL DEVICES : Landscape phones, 576px + ***/
 @media (min-width: 576px) {
-  header .hero-mask .hero-logo {
+  header .header-mask .hero-logo {
     position: absolute;
     top: 45px;
     right: 15px;
@@ -538,32 +538,27 @@ header {
 
 /*** MEDIUM DEVICES : Tablets, 768px + ***/
 @media (min-width: 768px) {
-  header .hero-mask .hero-logo {
-    top: 60px;
-    right: 25px;
-    width: 300px; }
-  header .homepage-slider {
-    top: 100px; }
-  .homepage-content {
-    margin-top: 260px; } }
+  header .header-mask {
+    min-height: 120px; }
+    header .header-mask .hero-logo {
+      top: 60px;
+      right: 25px;
+      width: 300px; } }
 
 /*** LARGE DEVICES : Desktops, 992px and up ***/
 @media (min-width: 992px) {
-  header .homepage-slider {
-    top: 140px; }
-  .homepage-content {
-    margin-top: 330px; } }
+  header .header-mask {
+    min-height: 160px; } }
 
 /*** EXTRA LARGE DEVICES : Large Desktops, 1200px + ***/
 @media (min-width: 1200px) {
-  header .homepage-slider {
-    top: 170px; }
-  header .hero-mask .hero-logo {
-    top: 80px;
-    right: 30;
-    width: 400px; }
+  header .header-mask {
+    min-height: 189px; }
+    header .header-mask .hero-logo {
+      top: 80px;
+      right: 30;
+      width: 400px; }
   .homepage-content {
-    margin-top: 245px;
     padding: 3vh 0; }
   .page-breadcrumbs {
     margin-top: 150px; } }

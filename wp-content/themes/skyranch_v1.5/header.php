@@ -50,7 +50,7 @@
 <div class="container main-wrapper">
   <div class="row">
     <header class="header">
-    <div class="hero-mask">
+    <div class="header-mask">
       <a href="<?php bloginfo('url') ?>" title="<?php bloginfo('name') ?>" class="hero-logo">
         <img src="<?php bloginfo('template_directory') ?>/assets/images/skyranch-logo.png" class="logo img-fluid" />
       </a>
