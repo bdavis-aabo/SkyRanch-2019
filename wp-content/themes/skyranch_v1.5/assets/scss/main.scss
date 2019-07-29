@@ -64,6 +64,15 @@ header { width: 100%; position: relative; z-index: 99; left: 0; top: 0;
   section.heroimage { top: 0; }
   .homepage-content { padding: 3vh 0; }
   .page-breadcrumbs { margin-top: 10px; }
+  .homepage-heroimages {
+    .homepage-heroimage {
+      .homepage-heroimage-contents { bottom: 6%; font-size: 1.3em;
+        &.image-1 { bottom: 15%; }
+        &.image-2 { bottom: 25%; }
+        a { color: $white; font-size: .9em; text-transform: uppercase; }
+      }
+    }
+  }
 }
 
 

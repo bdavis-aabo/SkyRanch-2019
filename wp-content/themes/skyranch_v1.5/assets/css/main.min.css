@@ -566,7 +566,18 @@ header {
   .homepage-content {
     padding: 3vh 0; }
   .page-breadcrumbs {
-    margin-top: 10px; } }
+    margin-top: 10px; }
+  .homepage-heroimages .homepage-heroimage .homepage-heroimage-contents {
+    bottom: 6%;
+    font-size: 1.3em; }
+    .homepage-heroimages .homepage-heroimage .homepage-heroimage-contents.image-1 {
+      bottom: 15%; }
+    .homepage-heroimages .homepage-heroimage .homepage-heroimage-contents.image-2 {
+      bottom: 25%; }
+    .homepage-heroimages .homepage-heroimage .homepage-heroimage-contents a {
+      color: #fff;
+      font-size: .9em;
+      text-transform: uppercase; } }
 
 /*
 :::::::::: CUSTOM MEDIA QUERIES IF NEEDED ::::::::::
