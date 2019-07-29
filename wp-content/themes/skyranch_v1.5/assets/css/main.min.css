@@ -238,6 +238,7 @@ input[type=radio]:not(old) + label > span {
   height: 1.1em;
   margin: .25em .5em .25em .25em;
   border: 0.0625em solid #ccc;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#e0e0e0));
   background: -webkit-linear-gradient(#f0f0f0, #e0e0e0);
   background: linear-gradient(#f0f0f0, #e0e0e0);
   vertical-align: bottom;
@@ -249,6 +250,7 @@ input[type=checkbox]:not(old) + label > span {
   height: 1.1em;
   margin: .25em .5em .25em .25em;
   border: 0.0625em solid #ccc;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#e0e0e0));
   background: -webkit-linear-gradient(#f0f0f0, #e0e0e0);
   background: linear-gradient(#f0f0f0, #e0e0e0);
   vertical-align: bottom;
@@ -256,6 +258,7 @@ input[type=checkbox]:not(old) + label > span {
 
 input[type=checkbox]:not(old):checked + label > span,
 input[type=radio]:not(old):checked + label > span {
+  background: -webkit-gradient(linear, left top, left bottom, from(#e0e0e0), to(#f0f0f0));
   background: -webkit-linear-gradient(#e0e0e0, #f0f0f0);
   background: linear-gradient(#e0e0e0, #f0f0f0); }
 
@@ -558,10 +561,12 @@ header {
       top: 80px;
       right: 30;
       width: 400px; }
+  section.heroimage {
+    top: 0; }
   .homepage-content {
     padding: 3vh 0; }
   .page-breadcrumbs {
-    margin-top: 150px; } }
+    margin-top: 10px; } }
 
 /*
 :::::::::: CUSTOM MEDIA QUERIES IF NEEDED ::::::::::
