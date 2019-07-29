@@ -512,6 +512,23 @@ header {
     left: 0;
     top: 0;
     z-index: 98; }
+    header .homepage-slider .carousel .carousel-item {
+      position: relative; }
+      header .homepage-slider .carousel .carousel-item .hero-caption {
+        font-size: 1em;
+        color: #fff;
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+        text-transform: uppercase;
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.6); }
+
+.homepage-heroimages .homepage-heroimage .homepage-heroimage-contents {
+  font-size: 1.15em; }
+  .homepage-heroimages .homepage-heroimage .homepage-heroimage-contents a {
+    color: #fff;
+    font-size: .9em;
+    text-transform: uppercase; }
 
 .homepage-content {
   margin-top: 0; }
@@ -529,9 +546,17 @@ header {
 
 .footer {
   width: 100%; }
+  .footer .builder {
+    text-align: center; }
+    .footer .builder img {
+      width: 70%;
+      margin: 0 auto 15px;
+      display: inline-block; }
 
 .footer-address {
-  font-size: 1.25em; }
+  font-size: .9em;
+  padding-left: 0;
+  padding-right: 0; }
 
 /*** SMALL DEVICES : Landscape phones, 576px + ***/
 @media (min-width: 576px) {
@@ -551,7 +576,10 @@ header {
     header .header-mask .hero-logo {
       top: 60px;
       right: 25px;
-      width: 300px; } }
+      width: 300px; }
+  .footer-address {
+    padding-left: 5vw;
+    padding-right: 5vw; } }
 
 /*** LARGE DEVICES : Desktops, 992px and up ***/
 @media (min-width: 992px) {
@@ -566,6 +594,15 @@ header {
       top: 80px;
       right: 30;
       width: 450px; }
+  header .homepage-slider {
+    position: inherit;
+    left: 0;
+    top: 0;
+    z-index: 98; }
+    header .homepage-slider .carousel .carousel-item {
+      position: relative; }
+      header .homepage-slider .carousel .carousel-item .hero-caption {
+        font-size: 1.75em; }
   section.heroimage {
     top: 0; }
   .homepage-content {
@@ -573,22 +610,19 @@ header {
   .page-breadcrumbs {
     margin-top: 10px; }
   .homepage-heroimages .homepage-heroimage .homepage-heroimage-contents {
-    bottom: 6%;
-    font-size: 1.15em; }
+    bottom: 6%; }
     .homepage-heroimages .homepage-heroimage .homepage-heroimage-contents.image-1 {
       bottom: 15%; }
     .homepage-heroimages .homepage-heroimage .homepage-heroimage-contents.image-2 {
       bottom: 25%; }
-    .homepage-heroimages .homepage-heroimage .homepage-heroimage-contents a {
-      color: #fff;
-      font-size: .9em;
-      text-transform: uppercase; }
   .footer .builder {
     text-align: center; }
     .footer .builder img {
       width: 70%;
       margin: 0 auto 15px;
-      display: inline-block; } }
+      display: inline-block; }
+  .footer-address {
+    font-size: 1.25em; } }
 
 /*
 :::::::::: CUSTOM MEDIA QUERIES IF NEEDED ::::::::::

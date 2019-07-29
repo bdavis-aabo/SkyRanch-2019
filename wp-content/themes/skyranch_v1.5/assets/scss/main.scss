@@ -10,7 +10,21 @@ header { width: 100%; position: relative; z-index: 99; left: 0; top: 0;
   .header-mask { background: transparent url('../images/hero-mask-flat.png') no-repeat 0 0; background-size: contain; min-height: 69px; top: 10px; float: left; width: 100%; position: relative;
     .hero-logo { position: absolute; top: 25px; right: 15px; display: block; width: 180px; }
   }
-  .homepage-slider { position: inherit; left: 0; top: 0; z-index: 98; }
+  .homepage-slider { position: inherit; left: 0; top: 0; z-index: 98;
+    .carousel {
+      .carousel-item { position: relative;
+        .hero-caption { font-size: 1em; color: $white; position: absolute; right: 20px; bottom: 10px; text-transform: uppercase; text-shadow: 0 0 8px rgba(0,0,0,.6); }
+      }
+    }
+  }
+}
+
+.homepage-heroimages {
+  .homepage-heroimage {
+    .homepage-heroimage-contents { font-size: 1.15em;
+      a { color: $white; font-size: .9em; text-transform: uppercase; }
+    }
+  }
 }
 
 // MAIN CONTENT
@@ -19,8 +33,12 @@ header { width: 100%; position: relative; z-index: 99; left: 0; top: 0;
 .contact-form-container { margin-bottom: 25px; clear: both; float: left; width: 100%; }
 
 // FOOTER
-.footer { width: 100%; }
-.footer-address { font-size: 1.25em; }
+.footer { width: 100%;
+  .builder { text-align: center;
+    img { width: 70%; margin: 0 auto 15px; display: inline-block; }
+  }
+}
+.footer-address { font-size: .9em; padding-left: 0; padding-right: 0; }
 
 
 /*** SMALL DEVICES : Landscape phones, 576px + ***/
@@ -43,6 +61,7 @@ header { width: 100%; position: relative; z-index: 99; left: 0; top: 0;
     //.homepage-slider { top: 100px; }
   }
   //.homepage-content { margin-top: 260px; }
+  .footer-address { padding-left: 5vw; padding-right: 5vw; }
 }
 
 /*** LARGE DEVICES : Desktops, 992px and up ***/
@@ -60,16 +79,22 @@ header { width: 100%; position: relative; z-index: 99; left: 0; top: 0;
     .header-mask { min-height: 189px;
       .hero-logo { top: 80px; right: 30; width: 450px; }
     }
+    .homepage-slider { position: inherit; left: 0; top: 0; z-index: 98;
+      .carousel {
+        .carousel-item { position: relative;
+          .hero-caption { font-size: 1.75em; }
+        }
+      }
+    }
   }
   section.heroimage { top: 0; }
   .homepage-content { padding: 3vh 0; }
   .page-breadcrumbs { margin-top: 10px; }
   .homepage-heroimages {
     .homepage-heroimage {
-      .homepage-heroimage-contents { bottom: 6%; font-size: 1.15em;
+      .homepage-heroimage-contents { bottom: 6%;
         &.image-1 { bottom: 15%; }
         &.image-2 { bottom: 25%; }
-        a { color: $white; font-size: .9em; text-transform: uppercase; }
       }
     }
   }
@@ -78,6 +103,7 @@ header { width: 100%; position: relative; z-index: 99; left: 0; top: 0;
       img { width: 70%; margin: 0 auto 15px; display: inline-block; }
     }
   }
+  .footer-address { font-size: 1.25em; }
 }
 
 
