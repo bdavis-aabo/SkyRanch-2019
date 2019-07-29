@@ -2,7 +2,7 @@
 @import 'forms';
 @import 'navigation';
 
-body { background: $ltgray; overflow-x: hidden; }
+body { background: $ltgray; overflow-x: hidden; font-size: 16px; line-height: 1.8em; }
 .main-wrapper { background: $white; box-shadow: 0 0 8px rgba(0,0,0,.2); overflow-x: hidden; }
 section { width: 100%; }
 // HEADER
@@ -20,7 +20,7 @@ header { width: 100%; position: relative; z-index: 99; left: 0; top: 0;
 
 // FOOTER
 .footer { width: 100%; }
-
+.footer-address { font-size: 1.25em; }
 
 
 /*** SMALL DEVICES : Landscape phones, 576px + ***/
@@ -58,7 +58,7 @@ header { width: 100%; position: relative; z-index: 99; left: 0; top: 0;
   header {
     //.homepage-slider { top: 170px; }
     .header-mask { min-height: 189px;
-      .hero-logo { top: 80px; right: 30; width: 400px; }
+      .hero-logo { top: 80px; right: 30; width: 450px; }
     }
   }
   section.heroimage { top: 0; }
@@ -66,11 +66,16 @@ header { width: 100%; position: relative; z-index: 99; left: 0; top: 0;
   .page-breadcrumbs { margin-top: 10px; }
   .homepage-heroimages {
     .homepage-heroimage {
-      .homepage-heroimage-contents { bottom: 6%; font-size: 1.3em;
+      .homepage-heroimage-contents { bottom: 6%; font-size: 1.15em;
         &.image-1 { bottom: 15%; }
         &.image-2 { bottom: 25%; }
         a { color: $white; font-size: .9em; text-transform: uppercase; }
       }
+    }
+  }
+  .footer {
+    .builder { text-align: center;
+      img { width: 70%; margin: 0 auto 15px; display: inline-block; }
     }
   }
 }

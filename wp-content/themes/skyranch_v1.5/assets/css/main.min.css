@@ -475,7 +475,9 @@ No media query...Bootstrap default
 */
 body {
   background: #ccc;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-size: 16px;
+  line-height: 1.8em; }
 
 .main-wrapper {
   background: #fff;
@@ -528,6 +530,9 @@ header {
 .footer {
   width: 100%; }
 
+.footer-address {
+  font-size: 1.25em; }
+
 /*** SMALL DEVICES : Landscape phones, 576px + ***/
 @media (min-width: 576px) {
   header .header-mask .hero-logo {
@@ -560,7 +565,7 @@ header {
     header .header-mask .hero-logo {
       top: 80px;
       right: 30;
-      width: 400px; }
+      width: 450px; }
   section.heroimage {
     top: 0; }
   .homepage-content {
@@ -569,7 +574,7 @@ header {
     margin-top: 10px; }
   .homepage-heroimages .homepage-heroimage .homepage-heroimage-contents {
     bottom: 6%;
-    font-size: 1.3em; }
+    font-size: 1.15em; }
     .homepage-heroimages .homepage-heroimage .homepage-heroimage-contents.image-1 {
       bottom: 15%; }
     .homepage-heroimages .homepage-heroimage .homepage-heroimage-contents.image-2 {
@@ -577,7 +582,13 @@ header {
     .homepage-heroimages .homepage-heroimage .homepage-heroimage-contents a {
       color: #fff;
       font-size: .9em;
-      text-transform: uppercase; } }
+      text-transform: uppercase; }
+  .footer .builder {
+    text-align: center; }
+    .footer .builder img {
+      width: 70%;
+      margin: 0 auto 15px;
+      display: inline-block; } }
 
 /*
 :::::::::: CUSTOM MEDIA QUERIES IF NEEDED ::::::::::
