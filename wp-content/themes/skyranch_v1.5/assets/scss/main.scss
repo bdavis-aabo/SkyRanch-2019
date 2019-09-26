@@ -32,6 +32,11 @@ header { width: 100%; position: relative; z-index: 99; left: 0; top: 0;
 .builder-link { text-align: center; margin-top: 15px; margin-bottom: 25px; }
 .contact-form-container { margin-bottom: 25px; clear: both; float: left; width: 100%; }
 
+// BUILDER GALLERY
+.builder-gallery-contents {
+  .gallery-title { font-weight: normal; text-transform: uppercase; font-size: 1.6em; padding-left: 15px; }
+}
+
 // FOOTER
 .footer { width: 100%;
   .builder { text-align: center;
