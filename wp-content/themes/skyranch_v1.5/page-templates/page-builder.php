@@ -31,7 +31,7 @@
         <?php echo do_shortcode('[envira-gallery slug="'.$post->post_name.'"]') ?>
       </div>
     </div>
-    <?php else: echo 'empty'; endif; ?>
+    <?php endif; ?>
 
 
       <div class="col-12">
