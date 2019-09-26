@@ -24,14 +24,15 @@
 
   <div class="row">
 
-    <?php if(get_field('homebuilder_gallery') != ''): $_renderings = get_field('homebuilder_gallery'); ?>
-        <?php foreach($_renderings as $_rendering): ?>
-          <div class="col-12 col-md-3">
-            <div class="homebuilder-model"><img src="<?php echo $_rendering['url'] ?>" class="img-fluid" alt="<?php the_title() ?>" /></div>
-          </div>
-        <?php endforeach; ?>
+    <?php if(do_shortcode('[envira-gallery slug="'.$post->post_name.'"]') != ''): ?>
+    <div class="col-12">
+      <div class="builder-gallery-contents" id="gallery">
+        <h1><?php the_title(); echo ' Photo Gallery'; ?></h1>
+        <?php echo do_shortcode('[envira-gallery slug="'.$post->post_name.'"]') ?>
+      </div>
+    </div>
+    <?php else: echo 'empty'; endif; ?>
 
-    <?php endif; ?>
 
       <div class="col-12">
       <p class="builder-link">

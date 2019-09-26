@@ -70,6 +70,7 @@ class WPSEO_Metabox_Formatter {
 			'isPremium'                 => WPSEO_Utils::is_yoast_seo_premium(),
 			'addKeywordUpsell'          => $this->get_add_keyword_upsell_translations(),
 			'wordFormRecognitionActive' => ( WPSEO_Language_Utils::get_language( get_locale() ) === 'en' ),
+			'siteIconUrl'               => get_site_icon_url(),
 
 			/**
 			 * Filter to determine if the markers should be enabled or not.
@@ -81,45 +82,61 @@ class WPSEO_Metabox_Formatter {
 				'labels' => array(
 					'content' => array(
 						'na'   => sprintf(
-							/* translators: %s expands to readability. */
-							__( 'Readability: %s', 'wordpress-seo' ),
+							/* translators: %1$s expands to the opening anchor tag, %2$s to the closing anchor tag, %3$s to the readability score. */
+							__( '%1$sReadability%2$s: %3$s', 'wordpress-seo' ),
+							'<a href="#yoast-readability-analysis-collapsible-metabox">',
+							'</a>',
 							'<strong>' . __( 'Not available', 'wordpress-seo' ) . '</strong>'
 						),
 						'bad'  => sprintf(
-							/* translators: %s expands to readability. */
-							__( 'Readability: %s', 'wordpress-seo' ),
+							/* translators: %1$s expands to the opening anchor tag, %2$s to the closing anchor tag, %3$s to the readability score. */
+							__( '%1$sReadability%2$s: %3$s', 'wordpress-seo' ),
+							'<a href="#yoast-readability-analysis-collapsible-metabox">',
+							'</a>',
 							'<strong>' . __( 'Needs improvement', 'wordpress-seo' ) . '</strong>'
 						),
 						'ok'   => sprintf(
-							/* translators: %s expands to readability. */
-							__( 'Readability: %s', 'wordpress-seo' ),
+							/* translators: %1$s expands to the opening anchor tag, %2$s to the closing anchor tag, %3$s to the readability score. */
+							__( '%1$sReadability%2$s: %3$s', 'wordpress-seo' ),
+							'<a href="#yoast-readability-analysis-collapsible-metabox">',
+							'</a>',
 							'<strong>' . __( 'OK', 'wordpress-seo' ) . '</strong>'
 						),
 						'good' => sprintf(
-							/* translators: %s expands to readability. */
-							__( 'Readability: %s', 'wordpress-seo' ),
+							/* translators: %1$s expands to the opening anchor tag, %2$s to the closing anchor tag, %3$s to the readability score. */
+							__( '%1$sReadability%2$s: %3$s', 'wordpress-seo' ),
+							'<a href="#yoast-readability-analysis-collapsible-metabox">',
+							'</a>',
 							'<strong>' . __( 'Good', 'wordpress-seo' ) . '</strong>'
 						),
 					),
 					'keyword' => array(
 						'na'   => sprintf(
-							/* translators: %s expands to SEO. */
-							__( 'SEO: %s', 'wordpress-seo' ),
-							'<strong>' . __( 'Not available', 'wordpress-seo' ) . '</strong>'
+							/* translators: %1$s expands to the opening anchor tag, %2$s to the closing anchor tag, %3$s to the SEO score. */
+							__( '%1$sSEO%2$s: %3$s', 'wordpress-seo' ),
+							'<a href="#yoast-seo-analysis-collapsible-metabox">',
+							'</a>',
+							'<strong>' . __( 'Focus Keyphrase not set', 'wordpress-seo' ) . '</strong>'
 						),
 						'bad'  => sprintf(
-							/* translators: %s expands to SEO. */
-							__( 'SEO: %s', 'wordpress-seo' ),
+							/* translators: %1$s expands to the opening anchor tag, %2$s to the closing anchor tag, %3$s to the SEO score. */
+							__( '%1$sSEO%2$s: %3$s', 'wordpress-seo' ),
+							'<a href="#yoast-seo-analysis-collapsible-metabox">',
+							'</a>',
 							'<strong>' . __( 'Needs improvement', 'wordpress-seo' ) . '</strong>'
 						),
 						'ok'   => sprintf(
-							/* translators: %s expands to SEO. */
-							__( 'SEO: %s', 'wordpress-seo' ),
+							/* translators: %1$s expands to the opening anchor tag, %2$s to the closing anchor tag, %3$s to the SEO score. */
+							__( '%1$sSEO%2$s: %3$s', 'wordpress-seo' ),
+							'<a href="#yoast-seo-analysis-collapsible-metabox">',
+							'</a>',
 							'<strong>' . __( 'OK', 'wordpress-seo' ) . '</strong>'
 						),
 						'good' => sprintf(
-							/* translators: %s expands to SEO. */
-							__( 'SEO: %s', 'wordpress-seo' ),
+							/* translators: %1$s expands to the opening anchor tag, %2$s to the closing anchor tag, %3$s to the SEO score. */
+							__( '%1$sSEO%2$s: %3$s', 'wordpress-seo' ),
+							'<a href="#yoast-seo-analysis-collapsible-metabox">',
+							'</a>',
 							'<strong>' . __( 'Good', 'wordpress-seo' ) . '</strong>'
 						),
 					),
@@ -233,7 +250,7 @@ class WPSEO_Metabox_Formatter {
 			$active_modules = Jetpack::get_active_modules();
 
 			// First at all, check if Jetpack's markdown module is active.
-			$is_markdown  = in_array( 'markdown', $active_modules, true );
+			$is_markdown = in_array( 'markdown', $active_modules, true );
 		}
 
 		/**
