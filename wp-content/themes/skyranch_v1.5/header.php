@@ -5,25 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>
-<?php
-  if(function_exists('is_tag') && is_tag()) {
-      echo 'Tag Archive for &quot;' . $tag . '&quot; - ';
-  } elseif(is_archive()) {
-      wp_title(''); echo ' Archive - ';
-  } elseif(is_search()) {
-      echo 'Search for &quot;' . wp_specialchars($s) . '&quot; - ';
-  } elseif(!(is_404()) && (is_single()) || (is_page()) && !(is_front_page())) {
-      wp_title('');
-  } elseif(is_404()) {
-      echo 'Page Not Found - ';
-  } elseif(is_front_page()){
-      bloginfo('name');
-  } elseif(is_home()){
-      echo 'Latest News - '; bloginfo('name');
-  }
-?>
-</title>
+
 
 <?php //seo plugin grabs page title ?>
 
