@@ -2,7 +2,9 @@
 @import 'forms';
 @import 'navigation';
 
-body { background: $ltgray; overflow-x: hidden; font-size: 16px; line-height: 1.8em; }
+body { background: $ltgray; overflow-x: hidden; font-size: 16px; line-height: 1.8em;
+  p { margin-bottom: 20px; }
+}
 .main-wrapper { background: $white; box-shadow: 0 0 8px rgba(0,0,0,.2); overflow-x: hidden; }
 section { width: 100%; }
 // HEADER
@@ -97,9 +99,9 @@ header { width: 100%; position: relative; z-index: 99; left: 0; top: 0;
   .page-breadcrumbs { margin-top: 10px; }
   .homepage-heroimages {
     .homepage-heroimage {
-      .homepage-heroimage-contents { bottom: 6%;
-        &.image-1 { bottom: 15%; }
-        &.image-2 { bottom: 25%; }
+      .homepage-heroimage-contents { bottom: 0;
+        &.image-1 { bottom: 10%; }
+        &.image-2 { bottom: 20%; }
       }
     }
   }

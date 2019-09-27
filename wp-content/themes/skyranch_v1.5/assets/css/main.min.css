@@ -478,6 +478,8 @@ body {
   overflow-x: hidden;
   font-size: 16px;
   line-height: 1.8em; }
+  body p {
+    margin-bottom: 20px; }
 
 .main-wrapper {
   background: #fff;
@@ -616,11 +618,11 @@ header {
   .page-breadcrumbs {
     margin-top: 10px; }
   .homepage-heroimages .homepage-heroimage .homepage-heroimage-contents {
-    bottom: 6%; }
+    bottom: 0; }
     .homepage-heroimages .homepage-heroimage .homepage-heroimage-contents.image-1 {
-      bottom: 15%; }
+      bottom: 10%; }
     .homepage-heroimages .homepage-heroimage .homepage-heroimage-contents.image-2 {
-      bottom: 25%; }
+      bottom: 20%; }
   .footer .builder {
     text-align: center; }
     .footer .builder img {

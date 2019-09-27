@@ -65,7 +65,7 @@
 
 <?php if(is_front_page() || is_page('life-within-reach')): ?>
   <div class="row">
-    <section class="homepage-contactform">
+    <section class="homepage-contactform" id="contact">
       <div class="col-12">
         <div class="form-container">
           <h1 class="peach-txt script-txt">stay connected</h1>
