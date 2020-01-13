@@ -30,7 +30,7 @@
       <a href="<?php bloginfo('template_directory') ?>/assets/images/skyranch-area-amenity-map.pdf" target="_blank" class="btn outline-btn">Download Area Map</a>
     </p>
 
-    <h3>Getting to Sky Ranch</h3>
+    <h3 style="text-align:center; color: #40A6D2; font-weight: bold;">Getting to Sky Ranch</h3>
     <p class="location-subcontent">
       Sky Ranch is within reach and easy to find. Take I-70 east to exit #292 (Airpark Road) and take the Frontage Road south along Monaghan Road until you see the signs for model homes and sales centers.</p>
 
