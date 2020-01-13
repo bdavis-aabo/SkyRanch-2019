@@ -69,7 +69,7 @@
       <div class="col-12">
         <div class="form-container">
           <h1 class="peach-txt script-txt">stay connected</h1>
-          <p>Be the first to know the latest news and happenings at Sky Ranch.</p>
+          <p>Be the first to receive the latest news and happenings at Sky Ranch. We can't wait to welcome you as a new neighbor.</p>
         </div>
         <div class="contact-form-container">
           <?php echo do_shortcode('[contact-form-7 id="142" title="Builder Contact Form"]'); ?>
