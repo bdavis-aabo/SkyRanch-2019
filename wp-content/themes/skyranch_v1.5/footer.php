@@ -21,7 +21,7 @@
     <footer class="footer ltblue-bg">
       <div class="row">
       <?php while($_builders->have_posts()): $_builders->the_post(); $_reverseLogo = get_field('homebuilder_logo_reverse'); ?>
-        <div class="col-4">
+        <div class="col-x">
           <div class="builder">
             <a href="<?php the_permalink() ?>" title="<?php the_title() ?>">
               <img src="<?php echo $_reverseLogo['url'] ?>" alt="<?php the_title() ?>" class="img-fluid aligncenter" />
@@ -40,13 +40,7 @@
       </div>
     </footer>
   </div>
-  <?php /*
-  <script type="text/javascript">
-  	document.addEventListener( 'wpcf7mailsent', function( event ) {
-    	location = 'http://skyranchco.com/thank-you';
-	}, false );
-  </script>
-  */ ?>
+
 
 </div> <?php //end container from header.php ?>
 

@@ -1,3 +1,5 @@
+/* stylelint-disable order/properties-alphabetical-order */
+/* stylelint-enable */
 /*
   - images
   - fonts
@@ -239,7 +241,6 @@ input[type=radio]:not(old) + label > span {
   margin: .25em .5em .25em .25em;
   border: 0.0625em solid #ccc;
   background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#e0e0e0));
-  background: -webkit-linear-gradient(#f0f0f0, #e0e0e0);
   background: linear-gradient(#f0f0f0, #e0e0e0);
   vertical-align: bottom;
   border-radius: 2em; }
@@ -251,7 +252,6 @@ input[type=checkbox]:not(old) + label > span {
   margin: .25em .5em .25em .25em;
   border: 0.0625em solid #ccc;
   background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#e0e0e0));
-  background: -webkit-linear-gradient(#f0f0f0, #e0e0e0);
   background: linear-gradient(#f0f0f0, #e0e0e0);
   vertical-align: bottom;
   border-radius: .125em; }
@@ -259,7 +259,6 @@ input[type=checkbox]:not(old) + label > span {
 input[type=checkbox]:not(old):checked + label > span,
 input[type=radio]:not(old):checked + label > span {
   background: -webkit-gradient(linear, left top, left bottom, from(#e0e0e0), to(#f0f0f0));
-  background: -webkit-linear-gradient(#e0e0e0, #f0f0f0);
   background: linear-gradient(#e0e0e0, #f0f0f0); }
 
 input[type=checkbox]:not(old):checked + label > span:before {
@@ -551,6 +550,25 @@ header {
   text-transform: uppercase;
   font-size: 1.6em;
   padding-left: 15px; }
+
+.builder-quickmoves {
+  margin: 0 0 2.5vh; }
+  .builder-quickmoves .builder-homes .builder-nohome h2 {
+    font-size: 1em; }
+  .builder-quickmoves .builder-homes .builder-home {
+    font-size: .95em;
+    line-height: 1.35em;
+    margin-bottom: 15px; }
+    .builder-quickmoves .builder-homes .builder-home h2 {
+      font-size: 1.5em;
+      text-transform: uppercase; }
+    .builder-quickmoves .builder-homes .builder-home p {
+      margin-bottom: 6px; }
+      .builder-quickmoves .builder-homes .builder-home p.details {
+        margin-bottom: 12px; }
+    .builder-quickmoves .builder-homes .builder-home .address-price strong {
+      color: #40A6D2;
+      font-weight: bold; }
 
 .footer {
   width: 100%; }

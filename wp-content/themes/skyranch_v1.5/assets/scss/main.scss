@@ -39,6 +39,24 @@ header { width: 100%; position: relative; z-index: 99; left: 0; top: 0;
   .gallery-title { font-weight: normal; text-transform: uppercase; font-size: 1.6em; padding-left: 15px; }
 }
 
+// QMI HOMES
+.builder-quickmoves { margin: 0 0 2.5vh;
+  .builder-homes {
+    .builder-nohome {
+      h2 { font-size: 1em; }
+    }
+    .builder-home { font-size: .95em; line-height: 1.35em; margin-bottom: 15px;
+      h2 { font-size: 1.5em; text-transform: uppercase; }
+      p  { margin-bottom: 6px;
+        &.details { margin-bottom: 12px; }
+      }
+      .address-price {
+        strong { color: $ltblue; font-weight: bold; }
+      }
+    }
+  }
+}
+
 // FOOTER
 .footer { width: 100%;
   .builder { text-align: center;
