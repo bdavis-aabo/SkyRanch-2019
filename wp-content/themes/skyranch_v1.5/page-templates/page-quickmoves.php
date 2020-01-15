@@ -9,6 +9,15 @@
 
   <?php get_template_part('page/page-breadcrumbs') ?>
 
+  <section class="community-content">
+    <div class="row">
+      <div class="col-12">
+        <div class="page-contents">
+          <?php the_content() ?>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <?php foreach($_terms as $_term): ?>
     <section class="builder-quickmoves" id="<?php echo $_term->slug . '-qmi' ?>">
