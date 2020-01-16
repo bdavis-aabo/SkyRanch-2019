@@ -29,7 +29,7 @@
           <img src="<?php echo $_builderLogo['url'] ?>" alt="<?php the_title() ?>" class="aligncenter img-fluid" />
         </div>
         <div class="builder-address">
-          <h3><?php the_title() ?></h3>
+          <h3 class="blue-txt"><?php the_title() ?></h3>
           <?php echo get_field('homebuilder_address'); ?>
           <strong>Sales office is Open:</strong> <?php echo get_field('homebuilder_hours') ?><br/>
           <strong class="blue-txt"><?php echo get_field('homebuilder_phone') ?></strong>

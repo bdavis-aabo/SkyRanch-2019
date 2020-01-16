@@ -656,7 +656,9 @@ header {
     .homepage-heroimages .homepage-heroimage .homepage-heroimage-contents.image-2 {
       bottom: 20%; }
   .builder-quickmoves {
-    margin: 0 0 2.5vh; }
+    margin: 0 0 2.5vh;
+    border-top: 1px solid #ccc;
+    padding-top: 2.5vh; }
     .builder-quickmoves .builder-information-container {
       display: -webkit-box;
       display: flex;

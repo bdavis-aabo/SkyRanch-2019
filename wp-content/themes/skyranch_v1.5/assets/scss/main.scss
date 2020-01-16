@@ -130,7 +130,7 @@ header { width: 100%; position: relative; z-index: 99; left: 0; top: 0;
   }
 
   // QMI HOMES
-  .builder-quickmoves { margin: 0 0 2.5vh;
+  .builder-quickmoves { margin: 0 0 2.5vh; border-top: 1px solid $ltgray; padding-top: 2.5vh; 
     .builder-information-container { display: flex; flex-wrap: nowrap; justify-content: flex-start; margin-bottom: 20px; align-items: center;
       .builder-address { text-align: left; padding-left: 25px;
         p { margin-bottom: 0; }
