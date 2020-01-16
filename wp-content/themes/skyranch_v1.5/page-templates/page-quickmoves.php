@@ -24,8 +24,18 @@
       <?php $_builderPage = new WP_Query(array('post_type'=>'page','post_status'=>'publish','pagename'=>$_term->slug));
         while($_builderPage->have_posts()): $_builderPage->the_post(); $_builderLogo = get_field('homebuilder_logo');
       ?>
-        <img src="<?php echo $_builderLogo['url'] ?>" alt="<?php the_title() ?>" class="aligncenter img-fluid" />
-      <?php endwhile; wp_reset_query(); ?>
+      <div class="builder-information-container">
+        <div class="builder-logo">
+          <img src="<?php echo $_builderLogo['url'] ?>" alt="<?php the_title() ?>" class="aligncenter img-fluid" />
+        </div>
+        <div class="builder-address">
+          <h3><?php the_title() ?></h3>
+          <?php echo get_field('homebuilder_address'); ?>
+          <strong>Sales office is Open:</strong> <?php echo get_field('homebuilder_hours') ?><br/>
+          <strong class="blue-txt"><?php echo get_field('homebuilder_phone') ?></strong>
+        </div>
+      </div>
+    <?php endwhile; wp_reset_query(); ?>
 
       <?php
       $_quickmoves = new WP_Query();
