@@ -29,7 +29,7 @@
   },
   "homepage": "https://enviragallery.com",
   "devDependencies": {
-    "webpack-cli": "^3.0.8",
+    "webpack-cli": "^3.3.12",
     "postcss-cssnext": "^3.0",
     "postcss-import": "^11.1",
     "postcss-loader": "^2.0",
